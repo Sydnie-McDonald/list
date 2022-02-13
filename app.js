@@ -1,8 +1,11 @@
 // import functions and grab DOM elements
+import { dogs } from './data.js';
+import { renderDogCard } from './render.js';
+
+const dogListContainer = document.getElementById('dog-list-container');
 
 // let state
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+for (let dog of dogs) {
+    const dogDiv = renderDogCard(dog);
+    dogListContainer.append(dogDiv);
+}
