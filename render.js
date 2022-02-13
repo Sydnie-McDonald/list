@@ -27,11 +27,8 @@ export function renderDog(dog) {
     const colorAndweightEl = document.createElement('div');
 
     div.classList.add('dog-detail-container');
-    // create anchor tag
-    const a = document.createElement('a');
-    a.href = `./lists/?id=${dog.id}`;
 
-    img.src = `./assets/${dog.type}.jpg`;
+    img.src = `../assets/${dog.type}.jpg`;
 
     nameEl.textContent = dog.name;
     nameEl.classList.add('name');
@@ -50,7 +47,6 @@ export function renderDog(dog) {
     colorAndweightEl.append(colorEl, weightEl);
 
 
-    a.append(img, nameEl, breedEl, colorAndweightEl);
-    div.append(a);
+    div.append(img, nameEl, breedEl, colorAndweightEl);
     return div;
 }
