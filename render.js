@@ -19,6 +19,7 @@ export function renderDogCard(dog) {
 
 export function renderDog(dog) {
     const div = document.createElement('div');
+    const img = document.createElement('img');
     const nameEl = document.createElement('p');
     const breedEl = document.createElement('p');
     const weightEl = document.createElement('p');
@@ -28,9 +29,8 @@ export function renderDog(dog) {
     div.classList.add('dog-detail-container');
     // create anchor tag
     const a = document.createElement('a');
-    a.href = `/lists/?id=${dog.id}`;
+    a.href = `./lists/?id=${dog.id}`;
 
-    const img = document.createElement('img');
     img.src = `./assets/${dog.type}.jpg`;
 
     nameEl.textContent = dog.name;
