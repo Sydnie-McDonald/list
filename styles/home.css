@@ -1,1 +1,59 @@
 /* add home page styles here */
+
+#dog-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.dog-card {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 1px black;
+    width: 200px;
+    height: 200px;
+}
+
+.dog-card img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.dog-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+.dog-detail .name {
+    font-size: 2rem;
+}
+
+.dog-detail .age-and-breed {
+    height: 50px;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dog-detail img {
+    margin: 40px;
+    width: 80%;
+}
+
+.dog-detail .description {
+    font-size: 1.2rem;
+    margin: 20px;
+    padding: 20px;
+}
